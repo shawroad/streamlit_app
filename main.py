@@ -6,11 +6,11 @@
 """
 import json
 import requests
-from pyecharts.globals import ThemeType
 import streamlit as st
-from pyecharts import options as opts
-from pyecharts.charts import Bar, Pie
-from streamlit_echarts import st_echarts, st_pyecharts
+#from pyecharts.globals import ThemeType
+# from pyecharts import options as opts
+# from pyecharts.charts import Bar, Pie
+# from streamlit_echarts import st_echarts, st_pyecharts
 
 
 class MultiApp:
@@ -83,5 +83,5 @@ if __name__ == '__main__':
     app = MultiApp()
     app.add_app('SQL语句练习', run_sql_notebook)
     app.add_app('docker笔记', run_docker_notebook)
-    app.add_app('随机画画图', run_plot)
+    # app.add_app('随机画画图', run_plot)
     app.run()
